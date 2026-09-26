@@ -106,11 +106,6 @@ Outputs and `train.log` go to `work_dirs/qwen3vl-uav-2b-lora/`.
 Valid checkpoints in that output directory resume automatically, including
 the trained non-LoRA parameters and special-token embeddings.
 
-This is a new checkpoint format: `project=GeoRisk`, schema version 1,
-`trajectory_token=<traj>`. Train from base Qwen3-VL weights. Navigation
-checkpoints from other projects are rejected; no token/key conversion or
-checkpoint migration is provided.
-
 ## Closed-Loop Evaluation
 
 Evaluation reads assets from `GEORISK_ASSETS_ROOT` (the project's parent
