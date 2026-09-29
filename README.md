@@ -15,8 +15,7 @@ navigation on OpenUAV/TravelUAV, built on Qwen3-VL-2B.
   squared L2 matching. The teacher cache has shape `[2, 64, 1024]` per frame.
 - **Collision-risk penalty:** current and historical front/down depth and UAV
   poses construct local obstacle geometry. The predicted execution path is
-  penalized for insufficient clearance. Depth uses local-min pooling with
-  the actual argmin pixel for back-projection; zero depth remains valid.
+  penalized for insufficient clearance. 
 - **Inference:** only the RGB navigation model and trajectory/stop heads run.
   The DA3 teacher, alignment head and geometry losses are not executed.
 
