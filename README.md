@@ -11,8 +11,7 @@ navigation on OpenUAV/TravelUAV, built on Qwen3-VL-2B.
   points from `<traj>`. The simulator executes the first five points before
   the next observation. There is no separate trajectory-completion model.
 - **Geometry alignment:** an alignment head projects final-layer image-token
-  states to frozen DA3 joint-view features. Features are normalized before
-  squared L2 matching. The teacher cache has shape `[2, 64, 1024]` per frame.
+  states to frozen DA3 joint-view features. 
 - **Collision-risk penalty:** current and historical front/down depth and UAV
   poses construct local obstacle geometry. The predicted execution path is
   penalized for insufficient clearance. 
